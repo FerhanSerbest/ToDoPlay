@@ -1,0 +1,790 @@
+2013-05-24 13:41:45,704 - [INFO] - from play in main 
+Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+
+2013-05-24 13:42:46,033 - [INFO] - from play in New I/O worker #1 
+Application started (Dev)
+
+2013-05-24 13:50:30,884 - [INFO] - from play in New I/O worker #7 
+Application started (Dev)
+
+2013-05-24 14:06:40,061 - [INFO] - from play in New I/O worker #6 
+Application started (Dev)
+
+2013-05-24 14:11:42,688 - [INFO] - from play in New I/O worker #6 
+Application started (Dev)
+
+2013-05-24 14:17:38,467 - [INFO] - from play in New I/O worker #5 
+database [default] connected at jdbc:h2:mem:play
+
+2013-05-24 14:17:38,855 - [ERROR] - from application in New I/O worker #5 
+
+
+! @6ed0ecmf3 - Internal server error, for (GET) [/tasks] ->
+
+play.api.db.evolutions.InvalidDatabaseRevision: Database 'default' needs evolution![An SQL script need to be run on your database.]
+	at play.api.db.evolutions.EvolutionsPlugin$$anonfun$onStart$1$$anonfun$apply$1.apply$mcV$sp(Evolutions.scala:462) ~[play-jdbc_2.10.jar:2.1.1]
+	at play.api.db.evolutions.EvolutionsPlugin.withLock(Evolutions.scala:483) ~[play-jdbc_2.10.jar:2.1.1]
+	at play.api.db.evolutions.EvolutionsPlugin$$anonfun$onStart$1.apply(Evolutions.scala:439) ~[play-jdbc_2.10.jar:2.1.1]
+	at play.api.db.evolutions.EvolutionsPlugin$$anonfun$onStart$1.apply(Evolutions.scala:437) ~[play-jdbc_2.10.jar:2.1.1]
+	at scala.collection.immutable.List.foreach(List.scala:309) ~[scala-library.jar:na]
+	at play.api.db.evolutions.EvolutionsPlugin.onStart(Evolutions.scala:437) ~[play-jdbc_2.10.jar:2.1.1]
+	at play.api.Play$$anonfun$start$1$$anonfun$apply$mcV$sp$1.apply(Play.scala:63) ~[play_2.10.jar:2.1.1]
+	at play.api.Play$$anonfun$start$1$$anonfun$apply$mcV$sp$1.apply(Play.scala:63) ~[play_2.10.jar:2.1.1]
+	at scala.collection.immutable.List.foreach(List.scala:309) ~[scala-library.jar:na]
+	at play.api.Play$$anonfun$start$1.apply$mcV$sp(Play.scala:63) ~[play_2.10.jar:2.1.1]
+	at play.api.Play$$anonfun$start$1.apply(Play.scala:63) ~[play_2.10.jar:2.1.1]
+	at play.api.Play$$anonfun$start$1.apply(Play.scala:63) ~[play_2.10.jar:2.1.1]
+	at play.utils.Threads$.withContextClassLoader(Threads.scala:18) ~[play_2.10.jar:2.1.1]
+	at play.api.Play$.start(Play.scala:62) ~[play_2.10.jar:2.1.1]
+	at play.core.ReloadableApplication$$anonfun$get$1$$anonfun$1.apply(ApplicationProvider.scala:133) ~[play_2.10.jar:2.1.1]
+	at play.core.ReloadableApplication$$anonfun$get$1$$anonfun$1.apply(ApplicationProvider.scala:106) ~[play_2.10.jar:2.1.1]
+	at scala.Option.map(Option.scala:145) ~[scala-library.jar:na]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:106) ~[play_2.10.jar:2.1.1]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:104) ~[play_2.10.jar:2.1.1]
+	at scala.util.Either$RightProjection.flatMap(Either.scala:523) [scala-library.jar:na]
+	at play.core.ReloadableApplication.get(ApplicationProvider.scala:104) ~[play_2.10.jar:2.1.1]
+	at play.core.server.Server$class.sendHandler$1(Server.scala:56) [play_2.10.jar:2.1.1]
+	at play.core.server.Server$$anonfun$getHandlerFor$4.apply(Server.scala:88) [play_2.10.jar:2.1.1]
+	at play.core.server.Server$$anonfun$getHandlerFor$4.apply(Server.scala:87) [play_2.10.jar:2.1.1]
+	at scala.util.Either$RightProjection.flatMap(Either.scala:523) [scala-library.jar:na]
+	at play.core.server.Server$class.getHandlerFor(Server.scala:87) [play_2.10.jar:2.1.1]
+	at play.core.server.NettyServer.getHandlerFor(NettyServer.scala:34) [play_2.10.jar:2.1.1]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$6.apply(PlayDefaultUpstreamHandler.scala:115) [play_2.10.jar:2.1.1]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$6.apply(PlayDefaultUpstreamHandler.scala:115) [play_2.10.jar:2.1.1]
+	at scala.util.Either.fold(Either.scala:98) [scala-library.jar:na]
+	at play.core.server.netty.PlayDefaultUpstreamHandler.messageReceived(PlayDefaultUpstreamHandler.scala:109) [play_2.10.jar:2.1.1]
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70) [netty.jar:na]
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:560) [netty.jar:na]
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:787) [netty.jar:na]
+	at org.jboss.netty.handler.codec.http.HttpContentDecoder.messageReceived(HttpContentDecoder.java:108) [netty.jar:na]
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70) [netty.jar:na]
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:560) [netty.jar:na]
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:787) [netty.jar:na]
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:296) [netty.jar:na]
+	at org.jboss.netty.handler.codec.frame.FrameDecoder.unfoldAndFireMessageReceived(FrameDecoder.java:459) [netty.jar:na]
+	at org.jboss.netty.handler.codec.replay.ReplayingDecoder.callDecode(ReplayingDecoder.java:536) [netty.jar:na]
+	at org.jboss.netty.handler.codec.replay.ReplayingDecoder.messageReceived(ReplayingDecoder.java:435) [netty.jar:na]
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70) [netty.jar:na]
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:560) [netty.jar:na]
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:555) [netty.jar:na]
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:268) [netty.jar:na]
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:255) [netty.jar:na]
+	at org.jboss.netty.channel.socket.nio.NioWorker.read(NioWorker.java:88) [netty.jar:na]
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:107) [netty.jar:na]
+	at org.jboss.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:312) [netty.jar:na]
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:88) [netty.jar:na]
+	at org.jboss.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178) [netty.jar:na]
+	at org.jboss.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108) [netty.jar:na]
+	at org.jboss.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42) [netty.jar:na]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [na:1.7.0_02]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [na:1.7.0_02]
+	at java.lang.Thread.run(Unknown Source) [na:1.7.0_02]
+
+2013-05-24 14:17:41,010 - [INFO] - from play in New I/O worker #5 
+database [default] connected at jdbc:h2:mem:play
+
+2013-05-24 14:17:41,063 - [INFO] - from play in New I/O worker #5 
+Application started (Dev)
+
+2013-05-24 14:18:17,910 - [INFO] - from play in New I/O worker #6 
+database [default] connected at jdbc:h2:mem:play
+
+2013-05-24 14:18:17,951 - [INFO] - from play in New I/O worker #6 
+Application started (Dev)
+
+2013-05-24 14:21:37,421 - [INFO] - from play in New I/O worker #5 
+database [default] connected at jdbc:h2:mem:play
+
+2013-05-24 14:21:37,453 - [INFO] - from play in New I/O worker #5 
+Application started (Dev)
+
+2013-05-24 14:22:54,533 - [INFO] - from play in New I/O worker #6 
+database [default] connected at jdbc:h2:mem:play
+
+2013-05-24 14:22:54,564 - [INFO] - from play in New I/O worker #6 
+Application started (Dev)
+
+2013-05-24 14:23:54,619 - [INFO] - from play in New I/O worker #6 
+database [default] connected at jdbc:h2:mem:play
+
+2013-05-24 14:23:54,648 - [INFO] - from play in New I/O worker #6 
+Application started (Dev)
+
+2013-05-24 14:25:02,916 - [INFO] - from play in New I/O worker #5 
+database [default] connected at jdbc:h2:mem:play
+
+2013-05-24 14:25:02,953 - [INFO] - from play in New I/O worker #5 
+Application started (Dev)
+
+2013-05-24 14:25:21,619 - [INFO] - from play in New I/O worker #6 
+database [default] connected at jdbc:h2:mem:play
+
+2013-05-24 14:25:21,662 - [INFO] - from play in New I/O worker #6 
+Application started (Dev)
+
+2013-05-24 14:37:28,751 - [ERROR] - from application in New I/O worker #4 
+
+
+! @6ed0h2ejj - Internal server error, for (GET) [/tasks] ->
+
+sbt.PlayExceptions$TemplateCompilationException: Compilation error[`)' expected but end of source found]
+	at sbt.PlayCommands$$anonfun$43.apply(PlayCommands.scala:433) ~[na:na]
+	at sbt.PlayCommands$$anonfun$43.apply(PlayCommands.scala:409) ~[na:na]
+	at sbt.Scoped$$anonfun$hf5$1.apply(Structure.scala:581) ~[na:na]
+	at sbt.Scoped$$anonfun$hf5$1.apply(Structure.scala:581) ~[na:na]
+	at scala.Function1$$anonfun$compose$1.apply(Function1.scala:49) ~[scala-library.jar:na]
+	at sbt.Scoped$Reduced$$anonfun$combine$1$$anonfun$apply$12.apply(Structure.scala:311) ~[na:na]
+	at sbt.Scoped$Reduced$$anonfun$combine$1$$anonfun$apply$12.apply(Structure.scala:311) ~[na:na]
+	at sbt.$tilde$greater$$anonfun$$u2219$1.apply(TypeFunctions.scala:41) ~[na:na]
+	at sbt.std.Transform$$anon$5.work(System.scala:71) ~[na:na]
+	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:232) ~[na:na]
+	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:232) ~[na:na]
+	at sbt.ErrorHandling$.wideConvert(ErrorHandling.scala:18) ~[na:na]
+	at sbt.Execute.work(Execute.scala:238) ~[na:na]
+	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:232) ~[na:na]
+	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:232) ~[na:na]
+	at sbt.ConcurrentRestrictions$$anon$4$$anonfun$1.apply(ConcurrentRestrictions.scala:160) ~[na:na]
+	at sbt.CompletionService$$anon$2.call(CompletionService.scala:30) ~[na:na]
+	at java.util.concurrent.FutureTask$Sync.innerRun(Unknown Source) ~[na:1.7.0_02]
+	at java.util.concurrent.FutureTask.run(Unknown Source) ~[na:1.7.0_02]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source) ~[na:1.7.0_02]
+	at java.util.concurrent.FutureTask$Sync.innerRun(Unknown Source) ~[na:1.7.0_02]
+	at java.util.concurrent.FutureTask.run(Unknown Source) ~[na:1.7.0_02]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [na:1.7.0_02]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [na:1.7.0_02]
+	at java.lang.Thread.run(Unknown Source) [na:1.7.0_02]
+
+2013-05-24 14:37:30,952 - [ERROR] - from application in New I/O worker #4 
+
+
+! @6ed0h2i0c - Internal server error, for (GET) [/tasks] ->
+
+sbt.PlayExceptions$TemplateCompilationException: Compilation error[`)' expected but end of source found]
+	at sbt.PlayCommands$$anonfun$43.apply(PlayCommands.scala:433) ~[na:na]
+	at sbt.PlayCommands$$anonfun$43.apply(PlayCommands.scala:409) ~[na:na]
+	at sbt.Scoped$$anonfun$hf5$1.apply(Structure.scala:581) ~[na:na]
+	at sbt.Scoped$$anonfun$hf5$1.apply(Structure.scala:581) ~[na:na]
+	at scala.Function1$$anonfun$compose$1.apply(Function1.scala:49) ~[scala-library.jar:na]
+	at sbt.Scoped$Reduced$$anonfun$combine$1$$anonfun$apply$12.apply(Structure.scala:311) ~[na:na]
+	at sbt.Scoped$Reduced$$anonfun$combine$1$$anonfun$apply$12.apply(Structure.scala:311) ~[na:na]
+	at sbt.$tilde$greater$$anonfun$$u2219$1.apply(TypeFunctions.scala:41) ~[na:na]
+	at sbt.std.Transform$$anon$5.work(System.scala:71) ~[na:na]
+	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:232) ~[na:na]
+	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:232) ~[na:na]
+	at sbt.ErrorHandling$.wideConvert(ErrorHandling.scala:18) ~[na:na]
+	at sbt.Execute.work(Execute.scala:238) ~[na:na]
+	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:232) ~[na:na]
+	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:232) ~[na:na]
+	at sbt.ConcurrentRestrictions$$anon$4$$anonfun$1.apply(ConcurrentRestrictions.scala:160) ~[na:na]
+	at sbt.CompletionService$$anon$2.call(CompletionService.scala:30) ~[na:na]
+	at java.util.concurrent.FutureTask$Sync.innerRun(Unknown Source) ~[na:1.7.0_02]
+	at java.util.concurrent.FutureTask.run(Unknown Source) ~[na:1.7.0_02]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source) ~[na:1.7.0_02]
+	at java.util.concurrent.FutureTask$Sync.innerRun(Unknown Source) ~[na:1.7.0_02]
+	at java.util.concurrent.FutureTask.run(Unknown Source) ~[na:1.7.0_02]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [na:1.7.0_02]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [na:1.7.0_02]
+	at java.lang.Thread.run(Unknown Source) [na:1.7.0_02]
+
+2013-05-24 14:37:42,912 - [INFO] - from play in New I/O worker #4 
+database [default] connected at jdbc:h2:mem:play
+
+2013-05-24 14:37:42,946 - [INFO] - from play in New I/O worker #4 
+Application started (Dev)
+
+2013-05-24 14:38:01,152 - [INFO] - from play in New I/O worker #4 
+database [default] connected at jdbc:h2:mem:play
+
+2013-05-24 14:38:01,189 - [INFO] - from play in New I/O worker #4 
+Application started (Dev)
+
+2013-05-24 14:38:05,691 - [INFO] - from play in New I/O worker #8 
+database [default] connected at jdbc:h2:mem:play
+
+2013-05-24 14:38:05,718 - [INFO] - from play in New I/O worker #8 
+Application started (Dev)
+
+2013-05-24 14:50:24,214 - [INFO] - from play in New I/O worker #1 
+database [default] connected at jdbc:h2:mem:play
+
+2013-05-24 14:50:24,245 - [INFO] - from play in New I/O worker #1 
+Application started (Dev)
+
+2013-05-24 14:51:48,199 - [INFO] - from play in New I/O worker #3 
+database [default] connected at jdbc:h2:mem:play
+
+2013-05-24 14:51:48,227 - [INFO] - from play in New I/O worker #3 
+Application started (Dev)
+
+2013-05-24 14:51:58,054 - [INFO] - from play in New I/O worker #1 
+database [default] connected at jdbc:h2:mem:play
+
+2013-05-24 14:51:58,081 - [INFO] - from play in New I/O worker #1 
+Application started (Dev)
+
+2013-05-24 14:54:06,477 - [INFO] - from play in New I/O worker #3 
+database [default] connected at jdbc:h2:mem:play
+
+2013-05-24 14:54:06,504 - [INFO] - from play in New I/O worker #3 
+Application started (Dev)
+
+2013-05-24 14:54:22,469 - [INFO] - from play in New I/O worker #1 
+database [default] connected at jdbc:h2:mem:play
+
+2013-05-24 14:54:22,537 - [INFO] - from play in New I/O worker #1 
+Application started (Dev)
+
+2013-05-24 15:01:59,483 - [INFO] - from play in New I/O worker #6 
+database [default] connected at jdbc:h2:mem:play
+
+2013-05-24 15:01:59,512 - [INFO] - from play in New I/O worker #6 
+Application started (Dev)
+
+2013-05-24 15:02:30,704 - [INFO] - from play in New I/O worker #6 
+database [default] connected at jdbc:h2:mem:play
+
+2013-05-24 15:02:30,732 - [INFO] - from play in New I/O worker #6 
+Application started (Dev)
+
+2013-05-24 15:03:04,787 - [INFO] - from play in New I/O worker #8 
+database [default] connected at jdbc:h2:mem:play
+
+2013-05-24 15:03:04,815 - [INFO] - from play in New I/O worker #8 
+Application started (Dev)
+
+2013-05-24 15:03:20,182 - [INFO] - from play in New I/O worker #6 
+database [default] connected at jdbc:h2:mem:play
+
+2013-05-24 15:03:20,208 - [INFO] - from play in New I/O worker #6 
+Application started (Dev)
+
+2013-05-24 15:04:24,702 - [INFO] - from play in New I/O worker #8 
+database [default] connected at jdbc:h2:mem:play
+
+2013-05-24 15:04:24,734 - [INFO] - from play in New I/O worker #8 
+Application started (Dev)
+
+2013-05-24 15:04:33,926 - [INFO] - from play in New I/O worker #7 
+database [default] connected at jdbc:h2:mem:play
+
+2013-05-24 15:04:33,953 - [INFO] - from play in New I/O worker #7 
+Application started (Dev)
+
+2013-05-24 15:04:47,752 - [INFO] - from play in New I/O worker #6 
+database [default] connected at jdbc:h2:mem:play
+
+2013-05-24 15:04:47,778 - [INFO] - from play in New I/O worker #6 
+Application started (Dev)
+
+2013-05-24 15:05:00,435 - [INFO] - from play in New I/O worker #8 
+database [default] connected at jdbc:h2:mem:play
+
+2013-05-24 15:05:00,473 - [INFO] - from play in New I/O worker #8 
+Application started (Dev)
+
+2013-05-24 15:05:05,767 - [INFO] - from play in New I/O worker #6 
+database [default] connected at jdbc:h2:mem:play
+
+2013-05-24 15:05:05,793 - [INFO] - from play in New I/O worker #6 
+Application started (Dev)
+
+2013-05-24 15:05:34,420 - [INFO] - from play in New I/O worker #8 
+database [default] connected at jdbc:h2:mem:play
+
+2013-05-24 15:05:34,448 - [INFO] - from play in New I/O worker #8 
+Application started (Dev)
+
+2013-05-24 15:05:50,365 - [INFO] - from play in New I/O worker #8 
+database [default] connected at jdbc:h2:mem:play
+
+2013-05-24 15:05:50,390 - [INFO] - from play in New I/O worker #8 
+Application started (Dev)
+
+2013-05-24 15:06:02,413 - [INFO] - from play in New I/O worker #7 
+database [default] connected at jdbc:h2:mem:play
+
+2013-05-24 15:06:02,440 - [INFO] - from play in New I/O worker #7 
+Application started (Dev)
+
+2013-05-24 15:06:13,358 - [INFO] - from play in New I/O worker #7 
+database [default] connected at jdbc:h2:mem:play
+
+2013-05-24 15:06:13,385 - [INFO] - from play in New I/O worker #7 
+Application started (Dev)
+
+2013-05-24 15:06:23,864 - [INFO] - from play in New I/O worker #6 
+database [default] connected at jdbc:h2:mem:play
+
+2013-05-24 15:06:23,889 - [INFO] - from play in New I/O worker #6 
+Application started (Dev)
+
+2013-05-24 15:06:45,756 - [ERROR] - from application in New I/O worker #7 
+
+
+! @6ed0kodnh - Internal server error, for (POST) [/tasks] ->
+
+sbt.PlayExceptions$CompilationException: Compilation error[not enough arguments for method apply: (field: play.api.data.Field, args: (Symbol, Any)*)(implicit handler: views.html.helper.FieldConstructor, implicit lang: play.api.i18n.Lang)play.api.templates.Html in object inputText.
+Unspecified value parameters field, args.]
+	at sbt.PlayReloader$$anon$2$$anonfun$reload$2$$anonfun$apply$15$$anonfun$apply$16.apply(PlayReloader.scala:349) ~[na:na]
+	at sbt.PlayReloader$$anon$2$$anonfun$reload$2$$anonfun$apply$15$$anonfun$apply$16.apply(PlayReloader.scala:349) ~[na:na]
+	at scala.Option.map(Option.scala:133) ~[scala-library.jar:na]
+	at sbt.PlayReloader$$anon$2$$anonfun$reload$2$$anonfun$apply$15.apply(PlayReloader.scala:349) ~[na:na]
+	at sbt.PlayReloader$$anon$2$$anonfun$reload$2$$anonfun$apply$15.apply(PlayReloader.scala:346) ~[na:na]
+	at scala.Option.map(Option.scala:133) ~[scala-library.jar:na]
+	at sbt.PlayReloader$$anon$2$$anonfun$reload$2.apply(PlayReloader.scala:346) ~[na:na]
+	at sbt.PlayReloader$$anon$2$$anonfun$reload$2.apply(PlayReloader.scala:344) ~[na:na]
+	at scala.Either$LeftProjection.map(Either.scala:374) ~[na:na]
+	at sbt.PlayReloader$$anon$2.reload(PlayReloader.scala:344) ~[na:na]
+	at play.core.ReloadableApplication.get(ApplicationProvider.scala:98) ~[play_2.10.jar:2.1.1]
+	at play.core.server.Server$class.sendHandler$1(Server.scala:56) [play_2.10.jar:2.1.1]
+	at play.core.server.Server$$anonfun$getHandlerFor$4.apply(Server.scala:88) [play_2.10.jar:2.1.1]
+	at play.core.server.Server$$anonfun$getHandlerFor$4.apply(Server.scala:87) [play_2.10.jar:2.1.1]
+	at scala.util.Either$RightProjection.flatMap(Either.scala:523) [scala-library.jar:na]
+	at play.core.server.Server$class.getHandlerFor(Server.scala:87) [play_2.10.jar:2.1.1]
+	at play.core.server.NettyServer.getHandlerFor(NettyServer.scala:34) [play_2.10.jar:2.1.1]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$6.apply(PlayDefaultUpstreamHandler.scala:115) [play_2.10.jar:2.1.1]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$6.apply(PlayDefaultUpstreamHandler.scala:115) [play_2.10.jar:2.1.1]
+	at scala.util.Either.fold(Either.scala:98) [scala-library.jar:na]
+	at play.core.server.netty.PlayDefaultUpstreamHandler.messageReceived(PlayDefaultUpstreamHandler.scala:109) [play_2.10.jar:2.1.1]
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70) [netty.jar:na]
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:560) [netty.jar:na]
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:787) [netty.jar:na]
+	at org.jboss.netty.handler.codec.http.HttpContentDecoder.messageReceived(HttpContentDecoder.java:108) [netty.jar:na]
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70) [netty.jar:na]
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:560) [netty.jar:na]
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:787) [netty.jar:na]
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:296) [netty.jar:na]
+	at org.jboss.netty.handler.codec.frame.FrameDecoder.unfoldAndFireMessageReceived(FrameDecoder.java:459) [netty.jar:na]
+	at org.jboss.netty.handler.codec.replay.ReplayingDecoder.callDecode(ReplayingDecoder.java:536) [netty.jar:na]
+	at org.jboss.netty.handler.codec.replay.ReplayingDecoder.messageReceived(ReplayingDecoder.java:435) [netty.jar:na]
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70) [netty.jar:na]
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:560) [netty.jar:na]
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:555) [netty.jar:na]
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:268) [netty.jar:na]
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:255) [netty.jar:na]
+	at org.jboss.netty.channel.socket.nio.NioWorker.read(NioWorker.java:88) [netty.jar:na]
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:107) [netty.jar:na]
+	at org.jboss.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:312) [netty.jar:na]
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:88) [netty.jar:na]
+	at org.jboss.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178) [netty.jar:na]
+	at org.jboss.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108) [netty.jar:na]
+	at org.jboss.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42) [netty.jar:na]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [na:1.7.0_02]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [na:1.7.0_02]
+	at java.lang.Thread.run(Unknown Source) [na:1.7.0_02]
+
+2013-05-24 15:07:15,548 - [ERROR] - from application in New I/O worker #7 
+
+
+! @6ed0l05om - Internal server error, for (GET) [/assets/stylesheets/bootstrap.css] ->
+
+sbt.PlayExceptions$TemplateCompilationException: Compilation error[`)' expected but end of source found]
+	at sbt.PlayCommands$$anonfun$43.apply(PlayCommands.scala:433) ~[na:na]
+	at sbt.PlayCommands$$anonfun$43.apply(PlayCommands.scala:409) ~[na:na]
+	at sbt.Scoped$$anonfun$hf5$1.apply(Structure.scala:581) ~[na:na]
+	at sbt.Scoped$$anonfun$hf5$1.apply(Structure.scala:581) ~[na:na]
+	at scala.Function1$$anonfun$compose$1.apply(Function1.scala:49) ~[scala-library.jar:na]
+	at sbt.Scoped$Reduced$$anonfun$combine$1$$anonfun$apply$12.apply(Structure.scala:311) ~[na:na]
+	at sbt.Scoped$Reduced$$anonfun$combine$1$$anonfun$apply$12.apply(Structure.scala:311) ~[na:na]
+	at sbt.$tilde$greater$$anonfun$$u2219$1.apply(TypeFunctions.scala:41) ~[na:na]
+	at sbt.std.Transform$$anon$5.work(System.scala:71) ~[na:na]
+	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:232) ~[na:na]
+	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:232) ~[na:na]
+	at sbt.ErrorHandling$.wideConvert(ErrorHandling.scala:18) ~[na:na]
+	at sbt.Execute.work(Execute.scala:238) ~[na:na]
+	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:232) ~[na:na]
+	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:232) ~[na:na]
+	at sbt.ConcurrentRestrictions$$anon$4$$anonfun$1.apply(ConcurrentRestrictions.scala:160) ~[na:na]
+	at sbt.CompletionService$$anon$2.call(CompletionService.scala:30) ~[na:na]
+	at java.util.concurrent.FutureTask$Sync.innerRun(Unknown Source) ~[na:1.7.0_02]
+	at java.util.concurrent.FutureTask.run(Unknown Source) ~[na:1.7.0_02]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source) ~[na:1.7.0_02]
+	at java.util.concurrent.FutureTask$Sync.innerRun(Unknown Source) ~[na:1.7.0_02]
+	at java.util.concurrent.FutureTask.run(Unknown Source) ~[na:1.7.0_02]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [na:1.7.0_02]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [na:1.7.0_02]
+	at java.lang.Thread.run(Unknown Source) [na:1.7.0_02]
+
+2013-05-24 15:07:15,575 - [ERROR] - from application in New I/O worker #6 
+
+
+! @6ed0l05po - Internal server error, for (GET) [/assets/javascripts/jquery-1.9.0.min.js] ->
+
+sbt.PlayExceptions$TemplateCompilationException: Compilation error[`)' expected but end of source found]
+	at sbt.PlayCommands$$anonfun$43.apply(PlayCommands.scala:433) ~[na:na]
+	at sbt.PlayCommands$$anonfun$43.apply(PlayCommands.scala:409) ~[na:na]
+	at sbt.Scoped$$anonfun$hf5$1.apply(Structure.scala:581) ~[na:na]
+	at sbt.Scoped$$anonfun$hf5$1.apply(Structure.scala:581) ~[na:na]
+	at scala.Function1$$anonfun$compose$1.apply(Function1.scala:49) ~[scala-library.jar:na]
+	at sbt.Scoped$Reduced$$anonfun$combine$1$$anonfun$apply$12.apply(Structure.scala:311) ~[na:na]
+	at sbt.Scoped$Reduced$$anonfun$combine$1$$anonfun$apply$12.apply(Structure.scala:311) ~[na:na]
+	at sbt.$tilde$greater$$anonfun$$u2219$1.apply(TypeFunctions.scala:41) ~[na:na]
+	at sbt.std.Transform$$anon$5.work(System.scala:71) ~[na:na]
+	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:232) ~[na:na]
+	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:232) ~[na:na]
+	at sbt.ErrorHandling$.wideConvert(ErrorHandling.scala:18) ~[na:na]
+	at sbt.Execute.work(Execute.scala:238) ~[na:na]
+	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:232) ~[na:na]
+	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:232) ~[na:na]
+	at sbt.ConcurrentRestrictions$$anon$4$$anonfun$1.apply(ConcurrentRestrictions.scala:160) ~[na:na]
+	at sbt.CompletionService$$anon$2.call(CompletionService.scala:30) ~[na:na]
+	at java.util.concurrent.FutureTask$Sync.innerRun(Unknown Source) ~[na:1.7.0_02]
+	at java.util.concurrent.FutureTask.run(Unknown Source) ~[na:1.7.0_02]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source) ~[na:1.7.0_02]
+	at java.util.concurrent.FutureTask$Sync.innerRun(Unknown Source) ~[na:1.7.0_02]
+	at java.util.concurrent.FutureTask.run(Unknown Source) ~[na:1.7.0_02]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [na:1.7.0_02]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [na:1.7.0_02]
+	at java.lang.Thread.run(Unknown Source) [na:1.7.0_02]
+
+2013-05-24 15:07:15,606 - [ERROR] - from application in New I/O worker #8 
+
+
+! @6ed0l0610 - Internal server error, for (GET) [/assets/stylesheets/main.css] ->
+
+sbt.PlayExceptions$TemplateCompilationException: Compilation error[`)' expected but end of source found]
+	at sbt.PlayCommands$$anonfun$43.apply(PlayCommands.scala:433) ~[na:na]
+	at sbt.PlayCommands$$anonfun$43.apply(PlayCommands.scala:409) ~[na:na]
+	at sbt.Scoped$$anonfun$hf5$1.apply(Structure.scala:581) ~[na:na]
+	at sbt.Scoped$$anonfun$hf5$1.apply(Structure.scala:581) ~[na:na]
+	at scala.Function1$$anonfun$compose$1.apply(Function1.scala:49) ~[scala-library.jar:na]
+	at sbt.Scoped$Reduced$$anonfun$combine$1$$anonfun$apply$12.apply(Structure.scala:311) ~[na:na]
+	at sbt.Scoped$Reduced$$anonfun$combine$1$$anonfun$apply$12.apply(Structure.scala:311) ~[na:na]
+	at sbt.$tilde$greater$$anonfun$$u2219$1.apply(TypeFunctions.scala:41) ~[na:na]
+	at sbt.std.Transform$$anon$5.work(System.scala:71) ~[na:na]
+	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:232) ~[na:na]
+	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:232) ~[na:na]
+	at sbt.ErrorHandling$.wideConvert(ErrorHandling.scala:18) ~[na:na]
+	at sbt.Execute.work(Execute.scala:238) ~[na:na]
+	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:232) ~[na:na]
+	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:232) ~[na:na]
+	at sbt.ConcurrentRestrictions$$anon$4$$anonfun$1.apply(ConcurrentRestrictions.scala:160) ~[na:na]
+	at sbt.CompletionService$$anon$2.call(CompletionService.scala:30) ~[na:na]
+	at java.util.concurrent.FutureTask$Sync.innerRun(Unknown Source) ~[na:1.7.0_02]
+	at java.util.concurrent.FutureTask.run(Unknown Source) ~[na:1.7.0_02]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source) ~[na:1.7.0_02]
+	at java.util.concurrent.FutureTask$Sync.innerRun(Unknown Source) ~[na:1.7.0_02]
+	at java.util.concurrent.FutureTask.run(Unknown Source) ~[na:1.7.0_02]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [na:1.7.0_02]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [na:1.7.0_02]
+	at java.lang.Thread.run(Unknown Source) [na:1.7.0_02]
+
+2013-05-24 15:07:20,918 - [ERROR] - from application in New I/O worker #8 
+
+
+! @6ed0l0dn2 - Internal server error, for (GET) [/] ->
+
+sbt.PlayExceptions$TemplateCompilationException: Compilation error[`)' expected but end of source found]
+	at sbt.PlayCommands$$anonfun$43.apply(PlayCommands.scala:433) ~[na:na]
+	at sbt.PlayCommands$$anonfun$43.apply(PlayCommands.scala:409) ~[na:na]
+	at sbt.Scoped$$anonfun$hf5$1.apply(Structure.scala:581) ~[na:na]
+	at sbt.Scoped$$anonfun$hf5$1.apply(Structure.scala:581) ~[na:na]
+	at scala.Function1$$anonfun$compose$1.apply(Function1.scala:49) ~[scala-library.jar:na]
+	at sbt.Scoped$Reduced$$anonfun$combine$1$$anonfun$apply$12.apply(Structure.scala:311) ~[na:na]
+	at sbt.Scoped$Reduced$$anonfun$combine$1$$anonfun$apply$12.apply(Structure.scala:311) ~[na:na]
+	at sbt.$tilde$greater$$anonfun$$u2219$1.apply(TypeFunctions.scala:41) ~[na:na]
+	at sbt.std.Transform$$anon$5.work(System.scala:71) ~[na:na]
+	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:232) ~[na:na]
+	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:232) ~[na:na]
+	at sbt.ErrorHandling$.wideConvert(ErrorHandling.scala:18) ~[na:na]
+	at sbt.Execute.work(Execute.scala:238) ~[na:na]
+	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:232) ~[na:na]
+	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:232) ~[na:na]
+	at sbt.ConcurrentRestrictions$$anon$4$$anonfun$1.apply(ConcurrentRestrictions.scala:160) ~[na:na]
+	at sbt.CompletionService$$anon$2.call(CompletionService.scala:30) ~[na:na]
+	at java.util.concurrent.FutureTask$Sync.innerRun(Unknown Source) ~[na:1.7.0_02]
+	at java.util.concurrent.FutureTask.run(Unknown Source) ~[na:1.7.0_02]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source) ~[na:1.7.0_02]
+	at java.util.concurrent.FutureTask$Sync.innerRun(Unknown Source) ~[na:1.7.0_02]
+	at java.util.concurrent.FutureTask.run(Unknown Source) ~[na:1.7.0_02]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [na:1.7.0_02]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [na:1.7.0_02]
+	at java.lang.Thread.run(Unknown Source) [na:1.7.0_02]
+
+2013-05-24 15:07:55,769 - [INFO] - from play in New I/O worker #8 
+database [default] connected at jdbc:h2:mem:play
+
+2013-05-24 15:07:55,794 - [INFO] - from play in New I/O worker #8 
+Application started (Dev)
+
+2013-05-24 15:07:57,792 - [ERROR] - from application in play-internal-execution-context-3 
+
+
+! @6ed0l2gc6 - Internal server error, for (POST) [/tasks] ->
+
+play.api.Application$$anon$1: Execution exception[[IllegalStateException: No value]]
+	at play.api.Application$class.handleError(Application.scala:289) ~[play_2.10.jar:2.1.1]
+	at play.api.DefaultApplication.handleError(Application.scala:383) [play_2.10.jar:2.1.1]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anon$2$$anonfun$handle$1.apply(PlayDefaultUpstreamHandler.scala:144) [play_2.10.jar:2.1.1]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anon$2$$anonfun$handle$1.apply(PlayDefaultUpstreamHandler.scala:140) [play_2.10.jar:2.1.1]
+	at play.api.libs.concurrent.PlayPromise$$anonfun$extend1$1.apply(Promise.scala:113) [play_2.10.jar:2.1.1]
+	at play.api.libs.concurrent.PlayPromise$$anonfun$extend1$1.apply(Promise.scala:113) [play_2.10.jar:2.1.1]
+	at play.api.libs.concurrent.PlayPromise$$anonfun$extend$1$$anonfun$apply$1.apply(Promise.scala:104) [play_2.10.jar:2.1.1]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) [scala-library.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) [scala-library.jar:na]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [na:1.7.0_02]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [na:1.7.0_02]
+	at java.lang.Thread.run(Unknown Source) [na:1.7.0_02]
+java.lang.IllegalStateException: No value
+	at play.libs.F$None.get(F.java:540) ~[play_2.10.jar:2.1.1]
+	at play.data.Form.get(Form.java:525) ~[play-java_2.10.jar:2.1.1]
+	at controllers.Application.newTask(Application.java:29) ~[na:na]
+	at Routes$$anonfun$routes$1$$anonfun$applyOrElse$3$$anonfun$apply$3.apply(routes_routing.scala:77) ~[na:na]
+	at Routes$$anonfun$routes$1$$anonfun$applyOrElse$3$$anonfun$apply$3.apply(routes_routing.scala:77) ~[na:na]
+	at play.core.Router$HandlerInvoker$$anon$6$$anon$2.invocation(Router.scala:164) ~[play_2.10.jar:2.1.1]
+	at play.core.Router$Routes$$anon$1.invocation(Router.scala:345) ~[play_2.10.jar:2.1.1]
+	at play.core.j.JavaAction$$anon$1.call(JavaAction.scala:31) ~[play_2.10.jar:2.1.1]
+	at play.core.j.JavaAction$$anon$2.apply(JavaAction.scala:74) ~[play_2.10.jar:2.1.1]
+	at play.core.j.JavaAction$$anon$2.apply(JavaAction.scala:73) ~[play_2.10.jar:2.1.1]
+	at play.libs.F$Promise$PromiseActor.onReceive(F.java:420) ~[play_2.10.jar:2.1.1]
+	at akka.actor.UntypedActor$$anonfun$receive$1.applyOrElse(UntypedActor.scala:159) ~[akka-actor_2.10.jar:na]
+	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:425) ~[akka-actor_2.10.jar:na]
+	at akka.actor.ActorCell.invoke(ActorCell.scala:386) ~[akka-actor_2.10.jar:na]
+	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:230) ~[akka-actor_2.10.jar:na]
+	at akka.dispatch.Mailbox.run(Mailbox.scala:212) ~[akka-actor_2.10.jar:na]
+	at akka.dispatch.ForkJoinExecutorConfigurator$MailboxExecutionTask.exec(AbstractDispatcher.scala:502) ~[akka-actor_2.10.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:262) ~[scala-library.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:975) ~[scala-library.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1478) ~[scala-library.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:104) ~[scala-library.jar:na]
+
+2013-05-24 15:08:26,495 - [INFO] - from play in New I/O worker #7 
+database [default] connected at jdbc:h2:mem:play
+
+2013-05-24 15:08:26,525 - [INFO] - from play in New I/O worker #7 
+Application started (Dev)
+
+2013-05-24 15:08:39,934 - [INFO] - from play in New I/O worker #8 
+database [default] connected at jdbc:h2:mem:play
+
+2013-05-24 15:08:39,971 - [INFO] - from play in New I/O worker #8 
+Application started (Dev)
+
+2013-05-24 15:08:53,293 - [INFO] - from play in New I/O worker #8 
+database [default] connected at jdbc:h2:mem:play
+
+2013-05-24 15:08:53,319 - [INFO] - from play in New I/O worker #8 
+Application started (Dev)
+
+2013-05-24 15:09:05,433 - [INFO] - from play in New I/O worker #6 
+database [default] connected at jdbc:h2:mem:play
+
+2013-05-24 15:09:05,462 - [INFO] - from play in New I/O worker #6 
+Application started (Dev)
+
+2013-05-24 15:13:08,356 - [ERROR] - from application in New I/O worker #8 
+
+
+! @6ed0lk7n1 - Internal server error, for (GET) [/tasks] ->
+
+sbt.PlayExceptions$CompilationException: Compilation error[not found: value form]
+	at sbt.PlayReloader$$anon$2$$anonfun$reload$2$$anonfun$apply$15$$anonfun$apply$16.apply(PlayReloader.scala:349) ~[na:na]
+	at sbt.PlayReloader$$anon$2$$anonfun$reload$2$$anonfun$apply$15$$anonfun$apply$16.apply(PlayReloader.scala:349) ~[na:na]
+	at scala.Option.map(Option.scala:133) ~[scala-library.jar:na]
+	at sbt.PlayReloader$$anon$2$$anonfun$reload$2$$anonfun$apply$15.apply(PlayReloader.scala:349) ~[na:na]
+	at sbt.PlayReloader$$anon$2$$anonfun$reload$2$$anonfun$apply$15.apply(PlayReloader.scala:346) ~[na:na]
+	at scala.Option.map(Option.scala:133) ~[scala-library.jar:na]
+	at sbt.PlayReloader$$anon$2$$anonfun$reload$2.apply(PlayReloader.scala:346) ~[na:na]
+	at sbt.PlayReloader$$anon$2$$anonfun$reload$2.apply(PlayReloader.scala:344) ~[na:na]
+	at scala.Either$LeftProjection.map(Either.scala:374) ~[na:na]
+	at sbt.PlayReloader$$anon$2.reload(PlayReloader.scala:344) ~[na:na]
+	at play.core.ReloadableApplication.get(ApplicationProvider.scala:98) ~[play_2.10.jar:2.1.1]
+	at play.core.server.Server$class.sendHandler$1(Server.scala:56) [play_2.10.jar:2.1.1]
+	at play.core.server.Server$$anonfun$getHandlerFor$4.apply(Server.scala:88) [play_2.10.jar:2.1.1]
+	at play.core.server.Server$$anonfun$getHandlerFor$4.apply(Server.scala:87) [play_2.10.jar:2.1.1]
+	at scala.util.Either$RightProjection.flatMap(Either.scala:523) [scala-library.jar:na]
+	at play.core.server.Server$class.getHandlerFor(Server.scala:87) [play_2.10.jar:2.1.1]
+	at play.core.server.NettyServer.getHandlerFor(NettyServer.scala:34) [play_2.10.jar:2.1.1]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$6.apply(PlayDefaultUpstreamHandler.scala:115) [play_2.10.jar:2.1.1]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$6.apply(PlayDefaultUpstreamHandler.scala:115) [play_2.10.jar:2.1.1]
+	at scala.util.Either.fold(Either.scala:98) [scala-library.jar:na]
+	at play.core.server.netty.PlayDefaultUpstreamHandler.messageReceived(PlayDefaultUpstreamHandler.scala:109) [play_2.10.jar:2.1.1]
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70) [netty.jar:na]
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:560) [netty.jar:na]
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:787) [netty.jar:na]
+	at org.jboss.netty.handler.codec.http.HttpContentDecoder.messageReceived(HttpContentDecoder.java:108) [netty.jar:na]
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70) [netty.jar:na]
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:560) [netty.jar:na]
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:787) [netty.jar:na]
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:296) [netty.jar:na]
+	at org.jboss.netty.handler.codec.frame.FrameDecoder.unfoldAndFireMessageReceived(FrameDecoder.java:459) [netty.jar:na]
+	at org.jboss.netty.handler.codec.replay.ReplayingDecoder.callDecode(ReplayingDecoder.java:536) [netty.jar:na]
+	at org.jboss.netty.handler.codec.replay.ReplayingDecoder.messageReceived(ReplayingDecoder.java:435) [netty.jar:na]
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70) [netty.jar:na]
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:560) [netty.jar:na]
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:555) [netty.jar:na]
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:268) [netty.jar:na]
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:255) [netty.jar:na]
+	at org.jboss.netty.channel.socket.nio.NioWorker.read(NioWorker.java:88) [netty.jar:na]
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:107) [netty.jar:na]
+	at org.jboss.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:312) [netty.jar:na]
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:88) [netty.jar:na]
+	at org.jboss.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178) [netty.jar:na]
+	at org.jboss.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108) [netty.jar:na]
+	at org.jboss.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42) [netty.jar:na]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [na:1.7.0_02]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [na:1.7.0_02]
+	at java.lang.Thread.run(Unknown Source) [na:1.7.0_02]
+
+2013-05-24 15:13:18,487 - [ERROR] - from application in New I/O worker #8 
+
+
+! @6ed0lkmmi - Internal server error, for (GET) [/tasks] ->
+
+sbt.PlayExceptions$CompilationException: Compilation error[not found: value inputText]
+	at sbt.PlayReloader$$anon$2$$anonfun$reload$2$$anonfun$apply$15$$anonfun$apply$16.apply(PlayReloader.scala:349) ~[na:na]
+	at sbt.PlayReloader$$anon$2$$anonfun$reload$2$$anonfun$apply$15$$anonfun$apply$16.apply(PlayReloader.scala:349) ~[na:na]
+	at scala.Option.map(Option.scala:133) ~[scala-library.jar:na]
+	at sbt.PlayReloader$$anon$2$$anonfun$reload$2$$anonfun$apply$15.apply(PlayReloader.scala:349) ~[na:na]
+	at sbt.PlayReloader$$anon$2$$anonfun$reload$2$$anonfun$apply$15.apply(PlayReloader.scala:346) ~[na:na]
+	at scala.Option.map(Option.scala:133) ~[scala-library.jar:na]
+	at sbt.PlayReloader$$anon$2$$anonfun$reload$2.apply(PlayReloader.scala:346) ~[na:na]
+	at sbt.PlayReloader$$anon$2$$anonfun$reload$2.apply(PlayReloader.scala:344) ~[na:na]
+	at scala.Either$LeftProjection.map(Either.scala:374) ~[na:na]
+	at sbt.PlayReloader$$anon$2.reload(PlayReloader.scala:344) ~[na:na]
+	at play.core.ReloadableApplication.get(ApplicationProvider.scala:98) ~[play_2.10.jar:2.1.1]
+	at play.core.server.Server$class.sendHandler$1(Server.scala:56) [play_2.10.jar:2.1.1]
+	at play.core.server.Server$$anonfun$getHandlerFor$4.apply(Server.scala:88) [play_2.10.jar:2.1.1]
+	at play.core.server.Server$$anonfun$getHandlerFor$4.apply(Server.scala:87) [play_2.10.jar:2.1.1]
+	at scala.util.Either$RightProjection.flatMap(Either.scala:523) [scala-library.jar:na]
+	at play.core.server.Server$class.getHandlerFor(Server.scala:87) [play_2.10.jar:2.1.1]
+	at play.core.server.NettyServer.getHandlerFor(NettyServer.scala:34) [play_2.10.jar:2.1.1]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$6.apply(PlayDefaultUpstreamHandler.scala:115) [play_2.10.jar:2.1.1]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$6.apply(PlayDefaultUpstreamHandler.scala:115) [play_2.10.jar:2.1.1]
+	at scala.util.Either.fold(Either.scala:98) [scala-library.jar:na]
+	at play.core.server.netty.PlayDefaultUpstreamHandler.messageReceived(PlayDefaultUpstreamHandler.scala:109) [play_2.10.jar:2.1.1]
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70) [netty.jar:na]
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:560) [netty.jar:na]
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:787) [netty.jar:na]
+	at org.jboss.netty.handler.codec.http.HttpContentDecoder.messageReceived(HttpContentDecoder.java:108) [netty.jar:na]
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70) [netty.jar:na]
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:560) [netty.jar:na]
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:787) [netty.jar:na]
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:296) [netty.jar:na]
+	at org.jboss.netty.handler.codec.frame.FrameDecoder.unfoldAndFireMessageReceived(FrameDecoder.java:459) [netty.jar:na]
+	at org.jboss.netty.handler.codec.replay.ReplayingDecoder.callDecode(ReplayingDecoder.java:536) [netty.jar:na]
+	at org.jboss.netty.handler.codec.replay.ReplayingDecoder.messageReceived(ReplayingDecoder.java:435) [netty.jar:na]
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70) [netty.jar:na]
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:560) [netty.jar:na]
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:555) [netty.jar:na]
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:268) [netty.jar:na]
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:255) [netty.jar:na]
+	at org.jboss.netty.channel.socket.nio.NioWorker.read(NioWorker.java:88) [netty.jar:na]
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:107) [netty.jar:na]
+	at org.jboss.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:312) [netty.jar:na]
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:88) [netty.jar:na]
+	at org.jboss.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178) [netty.jar:na]
+	at org.jboss.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108) [netty.jar:na]
+	at org.jboss.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42) [netty.jar:na]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [na:1.7.0_02]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [na:1.7.0_02]
+	at java.lang.Thread.run(Unknown Source) [na:1.7.0_02]
+
+2013-05-24 15:13:24,978 - [ERROR] - from application in New I/O worker #8 
+
+
+! @6ed0ll6c9 - Internal server error, for (GET) [/tasks] ->
+
+sbt.PlayExceptions$CompilationException: Compilation error[not found: value form]
+	at sbt.PlayReloader$$anon$2$$anonfun$reload$2$$anonfun$apply$15$$anonfun$apply$16.apply(PlayReloader.scala:349) ~[na:na]
+	at sbt.PlayReloader$$anon$2$$anonfun$reload$2$$anonfun$apply$15$$anonfun$apply$16.apply(PlayReloader.scala:349) ~[na:na]
+	at scala.Option.map(Option.scala:133) ~[scala-library.jar:na]
+	at sbt.PlayReloader$$anon$2$$anonfun$reload$2$$anonfun$apply$15.apply(PlayReloader.scala:349) ~[na:na]
+	at sbt.PlayReloader$$anon$2$$anonfun$reload$2$$anonfun$apply$15.apply(PlayReloader.scala:346) ~[na:na]
+	at scala.Option.map(Option.scala:133) ~[scala-library.jar:na]
+	at sbt.PlayReloader$$anon$2$$anonfun$reload$2.apply(PlayReloader.scala:346) ~[na:na]
+	at sbt.PlayReloader$$anon$2$$anonfun$reload$2.apply(PlayReloader.scala:344) ~[na:na]
+	at scala.Either$LeftProjection.map(Either.scala:374) ~[na:na]
+	at sbt.PlayReloader$$anon$2.reload(PlayReloader.scala:344) ~[na:na]
+	at play.core.ReloadableApplication.get(ApplicationProvider.scala:98) ~[play_2.10.jar:2.1.1]
+	at play.core.server.Server$class.sendHandler$1(Server.scala:56) [play_2.10.jar:2.1.1]
+	at play.core.server.Server$$anonfun$getHandlerFor$4.apply(Server.scala:88) [play_2.10.jar:2.1.1]
+	at play.core.server.Server$$anonfun$getHandlerFor$4.apply(Server.scala:87) [play_2.10.jar:2.1.1]
+	at scala.util.Either$RightProjection.flatMap(Either.scala:523) [scala-library.jar:na]
+	at play.core.server.Server$class.getHandlerFor(Server.scala:87) [play_2.10.jar:2.1.1]
+	at play.core.server.NettyServer.getHandlerFor(NettyServer.scala:34) [play_2.10.jar:2.1.1]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$6.apply(PlayDefaultUpstreamHandler.scala:115) [play_2.10.jar:2.1.1]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$6.apply(PlayDefaultUpstreamHandler.scala:115) [play_2.10.jar:2.1.1]
+	at scala.util.Either.fold(Either.scala:98) [scala-library.jar:na]
+	at play.core.server.netty.PlayDefaultUpstreamHandler.messageReceived(PlayDefaultUpstreamHandler.scala:109) [play_2.10.jar:2.1.1]
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70) [netty.jar:na]
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:560) [netty.jar:na]
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:787) [netty.jar:na]
+	at org.jboss.netty.handler.codec.http.HttpContentDecoder.messageReceived(HttpContentDecoder.java:108) [netty.jar:na]
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70) [netty.jar:na]
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:560) [netty.jar:na]
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:787) [netty.jar:na]
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:296) [netty.jar:na]
+	at org.jboss.netty.handler.codec.frame.FrameDecoder.unfoldAndFireMessageReceived(FrameDecoder.java:459) [netty.jar:na]
+	at org.jboss.netty.handler.codec.replay.ReplayingDecoder.callDecode(ReplayingDecoder.java:536) [netty.jar:na]
+	at org.jboss.netty.handler.codec.replay.ReplayingDecoder.messageReceived(ReplayingDecoder.java:435) [netty.jar:na]
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70) [netty.jar:na]
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:560) [netty.jar:na]
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:555) [netty.jar:na]
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:268) [netty.jar:na]
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:255) [netty.jar:na]
+	at org.jboss.netty.channel.socket.nio.NioWorker.read(NioWorker.java:88) [netty.jar:na]
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:107) [netty.jar:na]
+	at org.jboss.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:312) [netty.jar:na]
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:88) [netty.jar:na]
+	at org.jboss.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178) [netty.jar:na]
+	at org.jboss.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108) [netty.jar:na]
+	at org.jboss.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42) [netty.jar:na]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [na:1.7.0_02]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [na:1.7.0_02]
+	at java.lang.Thread.run(Unknown Source) [na:1.7.0_02]
+
+2013-05-24 15:13:32,591 - [INFO] - from play in New I/O worker #8 
+database [default] connected at jdbc:h2:mem:play
+
+2013-05-24 15:13:32,618 - [INFO] - from play in New I/O worker #8 
+Application started (Dev)
+
+2013-05-24 15:13:52,598 - [INFO] - from play in New I/O worker #6 
+database [default] connected at jdbc:h2:mem:play
+
+2013-05-24 15:13:52,625 - [INFO] - from play in New I/O worker #6 
+Application started (Dev)
+
+2013-05-24 15:16:14,995 - [INFO] - from play in New I/O worker #6 
+database [default] connected at jdbc:h2:mem:play
+
+2013-05-24 15:16:15,066 - [INFO] - from play in New I/O worker #6 
+Application started (Dev)
+
+2013-05-24 15:17:06,379 - [INFO] - from play in New I/O worker #8 
+database [default] connected at jdbc:h2:mem:play
+
+2013-05-24 15:17:06,404 - [INFO] - from play in New I/O worker #8 
+Application started (Dev)
+
+2013-05-24 15:17:40,723 - [INFO] - from play in New I/O worker #7 
+database [default] connected at jdbc:h2:mem:play
+
+2013-05-24 15:17:40,754 - [INFO] - from play in New I/O worker #7 
+Application started (Dev)
+
+2013-05-24 15:19:04,089 - [INFO] - from play in New I/O worker #7 
+database [default] connected at jdbc:h2:mem:play
+
+2013-05-24 15:19:04,119 - [INFO] - from play in New I/O worker #7 
+Application started (Dev)
+
+2013-05-24 15:19:15,528 - [INFO] - from play in New I/O worker #6 
+database [default] connected at jdbc:h2:mem:play
+
+2013-05-24 15:19:15,561 - [INFO] - from play in New I/O worker #6 
+Application started (Dev)
+
+2013-05-24 15:22:38,847 - [INFO] - from play in New I/O worker #8 
+database [default] connected at jdbc:h2:mem:play
+
+2013-05-24 15:22:38,876 - [INFO] - from play in New I/O worker #8 
+Application started (Dev)
+
+2013-05-24 15:25:08,224 - [INFO] - from play in New I/O worker #8 
+database [default] connected at jdbc:h2:mem:play
+
+2013-05-24 15:25:08,252 - [INFO] - from play in New I/O worker #8 
+Application started (Dev)
+
