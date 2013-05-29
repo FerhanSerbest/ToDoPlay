@@ -1,8 +1,17 @@
 #################
 ## Eclipse
 #################
+ta/
+db/
+dist/
+logs/
+test-result/
+lib/
+tmp/
+modules/
 
-*.pydevproject
+
+ydevproject
 .project
 .metadata
 bin/
